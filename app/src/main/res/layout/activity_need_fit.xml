@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewEYM"
+        android:layout_width="176dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="226dp"
+        android:text="Enter your measurements"
+        app:layout_constraintBottom_toTopOf="@+id/find_result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/find_result"
+        android:layout_width="177dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="344dp"
+        android:background="#05AC9CA1"
+        android:text="Find My Best Fit"
+        android:textColor="#F3000000"
+        android:textColorHighlight="#00FFFDFD"
+        android:textColorLink="#00050000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEYM"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <android.support.constraint.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <TextView
+        android:id="@+id/label_waist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:text="Waist *"
+        app:layout_constraintEnd_toStartOf="@+id/seekBar2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/seekBar2" />
+
+    <TextView
+        android:id="@+id/label_hip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:text="Hip *    "
+        app:layout_constraintEnd_toStartOf="@+id/seekBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/seekBar" />
+
+    <TextView
+        android:id="@+id/label_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:text="Height *"
+        app:layout_constraintEnd_toStartOf="@+id/seekBar4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/seekBar4" />
+
+    <TextView
+        android:id="@+id/label_inseam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:text="Inseam"
+        app:layout_constraintEnd_toStartOf="@+id/seekBar3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/seekBar3" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBar4"
+        app:layout_constraintEnd_toStartOf="@+id/hipM"
+        app:layout_constraintStart_toEndOf="@+id/label_hip"
+        app:layout_constraintTop_toTopOf="@+id/seekBar2" />
+
+    <SeekBar
+        android:id="@+id/seekBar3"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="27dp"
+        app:layout_constraintBottom_toTopOf="@+id/find_result"
+        app:layout_constraintEnd_toStartOf="@+id/inseamM"
+        app:layout_constraintStart_toEndOf="@+id/label_inseam"
+        app:layout_constraintTop_toBottomOf="@+id/heightM"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <SeekBar
+        android:id="@+id/seekBar4"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="41dp"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBar3"
+        app:layout_constraintEnd_toStartOf="@+id/heightM"
+        app:layout_constraintStart_toEndOf="@+id/label_height"
+        app:layout_constraintTop_toTopOf="@+id/hipM" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="84dp"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBar4"
+        app:layout_constraintEnd_toStartOf="@+id/waistM"
+        app:layout_constraintStart_toEndOf="@+id/label_waist"
+        app:layout_constraintTop_toTopOf="@+id/textViewEYM" />
+
+    <TextView
+        android:id="@+id/waistM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:text="inches"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/seekBar2"
+        app:layout_constraintTop_toTopOf="@+id/seekBar2" />
+
+    <TextView
+        android:id="@+id/hipM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="123dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="123dp"
+        android:text="inches"
+        app:layout_constraintBottom_toTopOf="@+id/find_result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/seekBar"
+        app:layout_constraintTop_toTopOf="@+id/textViewEYM" />
+
+    <TextView
+        android:id="@+id/heightM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="inches"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/seekBar4"
+        app:layout_constraintTop_toBottomOf="@+id/hipM" />
+
+    <TextView
+        android:id="@+id/inseamM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="inches"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/seekBar3"
+        app:layout_constraintTop_toTopOf="@+id/seekBar3" />
+
+
+</android.support.constraint.ConstraintLayout>
